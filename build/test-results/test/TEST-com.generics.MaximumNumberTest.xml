@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.generics.MaximumNumberTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-28T12:23:35" hostname="admin1-desktop" time="0.001">
+<testsuite name="com.generics.MaximumNumberTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-28T12:53:40" hostname="admin1-desktop" time="0.016">
   <properties/>
-  <testcase name="givenThreeNumber_whenInteger_maximumNumber" classname="com.generics.MaximumNumberTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenThreeNumber_whenInteger_maximumNumber" classname="com.generics.MaximumNumberTest" time="0.012"/>
+  <testcase name="givenThreeString_whenString_maximumString" classname="com.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="givenThreeNumber_whenFloat_maximumNumber" classname="com.generics.MaximumNumberTest" time="0.002"/>
+  <system-out><![CDATA[Maximum :50
+Maximum :Shivanjali
+Maximum :65.5
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

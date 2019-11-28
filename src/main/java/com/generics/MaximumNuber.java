@@ -19,6 +19,11 @@ public class MaximumNuber<E extends Comparable<E>> {
         }if(this.thirdNumber.compareTo(maxNumber)>0){
             maxNumber =  this.thirdNumber;
         }
+        printMax(maxNumber);
         return maxNumber;
+    }
+
+    private void printMax(E maxNumber) {
+        System.out.println("Maximum :" +maxNumber);
     }
 }
