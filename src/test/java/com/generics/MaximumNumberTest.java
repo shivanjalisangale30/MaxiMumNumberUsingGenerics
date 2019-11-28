@@ -10,7 +10,7 @@ public class MaximumNumberTest {
         Integer firstNumber = 50;
         Integer secondNumber = 45;
         Integer thirdNumber = 40;
-        Integer result = maximumNuber.findMaximumNumber(firstNumber,secondNumber,thirdNumber);
+        Integer result = (Integer) maximumNuber.findMaximum(firstNumber,secondNumber,thirdNumber);
         Assert.assertEquals(firstNumber,result);
     }
 
@@ -20,7 +20,7 @@ public class MaximumNumberTest {
         Float firstNumber = 55.5f;
         Float secondNumber = 45.5f;
         Float thirdNumber = 65.5f;
-        Float result = maximumNuber.findMaximumNumber(firstNumber, secondNumber, thirdNumber);
+        Float result = (Float) maximumNuber.findMaximum(firstNumber, secondNumber, thirdNumber);
         Assert.assertEquals(thirdNumber,result);
     }
 
@@ -30,7 +30,7 @@ public class MaximumNumberTest {
         String firstString = "Shivanjali";
         String secondString = "Jyoti";
         String thirdString = "Hiral";
-        String result = maximumNuber.findMaximumString(firstString, secondString, thirdString);
+        String result = (String) maximumNuber.findMaximum(firstString, secondString, thirdString);
         Assert.assertEquals(firstString,result);
     }
 }
