@@ -6,31 +6,31 @@ import org.junit.Test;
 public class MaximumNumberTest {
     @Test
     public void givenThreeNumber_whenInteger_maximumNumber() {
-        MaximumNuber maximumNuber = new MaximumNuber();
         Integer firstNumber = 50;
         Integer secondNumber = 45;
         Integer thirdNumber = 40;
-        Integer result = (Integer) maximumNuber.findMaximum(firstNumber,secondNumber,thirdNumber);
-        Assert.assertEquals(firstNumber,result);
+        MaximumNuber maximumNuber = new MaximumNuber(firstNumber,secondNumber,thirdNumber);
+        Integer result = (Integer) maximumNuber.testMaximum();
+        Assert.assertEquals(firstNumber, result);
     }
 
     @Test
     public void givenThreeNumber_whenFloat_maximumNumber() {
-        MaximumNuber maximumNuber = new MaximumNuber();
         Float firstNumber = 55.5f;
         Float secondNumber = 45.5f;
         Float thirdNumber = 65.5f;
-        Float result = (Float) maximumNuber.findMaximum(firstNumber, secondNumber, thirdNumber);
+        MaximumNuber maximumNuber = new MaximumNuber(firstNumber,secondNumber,thirdNumber);
+        Float result = (Float) maximumNuber.testMaximum();
         Assert.assertEquals(thirdNumber,result);
     }
 
     @Test
     public void givenThreeString_whenString_maximumString() {
-        MaximumNuber maximumNuber = new MaximumNuber();
         String firstString = "Shivanjali";
         String secondString = "Jyoti";
         String thirdString = "Hiral";
-        String result = (String) maximumNuber.findMaximum(firstString, secondString, thirdString);
+        MaximumNuber maximumNuber = new MaximumNuber(firstString,secondString,thirdString);
+        String result = (String) maximumNuber.testMaximum();
         Assert.assertEquals(firstString,result);
     }
 }
