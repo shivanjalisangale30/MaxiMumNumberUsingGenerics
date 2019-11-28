@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.generics.MaximumNumberTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-28T11:22:51" hostname="admin1-desktop" time="0.001">
+<testsuite name="com.generics.MaximumNumberTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-28T11:40:00" hostname="admin1-desktop" time="0.003">
   <properties/>
-  <testcase name="givenThreeNumber_whenInteger_maximumNumber" classname="com.generics.MaximumNumberTest" time="0.001"/>
+  <testcase name="givenThreeNumber_whenInteger_maximumNumber" classname="com.generics.MaximumNumberTest" time="0.002"/>
+  <testcase name="givenThreeNumber_whenFloat_maximumNumber" classname="com.generics.MaximumNumberTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
