@@ -23,4 +23,14 @@ public class MaximumNumberTest {
         Float result = maximumNuber.findMaximumNumber(firstNumber, secondNumber, thirdNumber);
         Assert.assertEquals(thirdNumber,result);
     }
+
+    @Test
+    public void givenThreeString_whenString_maximumString() {
+        MaximumNuber maximumNuber = new MaximumNuber();
+        String firstString = "Shivanjali";
+        String secondString = "Jyoti";
+        String thirdString = "Hiral";
+        String result = maximumNuber.findMaximumString(firstString, secondString, thirdString);
+        Assert.assertEquals(firstString,result);
+    }
 }

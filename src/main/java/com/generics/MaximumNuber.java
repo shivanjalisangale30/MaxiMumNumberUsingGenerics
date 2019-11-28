@@ -20,4 +20,14 @@ public class MaximumNuber {
         }
         return maxNumber;
     }
+
+    public String  findMaximumString(String firstString, String secondString, String thirdString) {
+        String maxString = firstString;
+        if(secondString.compareTo(maxString)>0){
+            maxString = secondString;
+        }if(thirdString.compareTo(maxString)>0){
+            maxString = thirdString;
+        }
+        return maxString;
+    }
 }
