@@ -26,11 +26,11 @@ public class MaximumNumberTest {
 
     @Test
     public void givenThreeString_whenString_maximumString() {
-        String firstString = "Shivanjali";
-        String secondString = "Jyoti";
+        String firstString = "Jyoti";
+        String secondString = "Shivanjali";
         String thirdString = "Hiral";
         MaximumNuber maximumNuber = new MaximumNuber(firstString,secondString,thirdString);
         String result = (String) maximumNuber.testMaximum();
-        Assert.assertEquals(firstString,result);
+        Assert.assertEquals(secondString,result);
     }
 }
