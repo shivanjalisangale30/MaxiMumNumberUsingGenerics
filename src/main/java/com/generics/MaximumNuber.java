@@ -1,29 +1,31 @@
 package com.generics;
 
+import java.util.Arrays;
+
 public class MaximumNuber<E extends Comparable<E>> {
 
-    E firstNumber ;
-    E secondNumber;
-    E thirdNumber;
+    E maxNumber;
+    E[] itemArray;
 
-    public MaximumNuber(E firstNumber, E secondNumber, E thirdNumber) {
-        this.firstNumber = firstNumber;
-        this.secondNumber = secondNumber;
-        this.thirdNumber = thirdNumber;
+    public MaximumNuber(E... items) {
+        E[] arrayItems = (E[]) new Comparable[items.length];
+        for (E i : items) {
+            arrayItems[i] = items;
+            i++;
+        }
+        this.itemArray = arrayItems;
     }
 
     public E testMaximum() {
-        E maxNumber = this.firstNumber;
-        if (this.secondNumber.compareTo(maxNumber) > 0) {
-            maxNumber = this.secondNumber;
-        }if(this.thirdNumber.compareTo(maxNumber)>0){
-            maxNumber =  this.thirdNumber;
-        }
-        printMax(maxNumber);
-        return maxNumber;
+
+        Arrays.sort(itemArray);
+        printMax(itemArray[itemArray.length-1)];
+        return itemArray[itemArray.length-1);
     }
 
     private void printMax(E maxNumber) {
-        System.out.println("Maximum :" +maxNumber);
+        System.out.println("Maximum :" + maxNumber);
     }
+
+
 }
